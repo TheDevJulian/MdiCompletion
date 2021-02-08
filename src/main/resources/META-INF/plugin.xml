@@ -1,0 +1,47 @@
+<idea-plugin>
+    <name>MdiCompletion</name>
+    <vendor email="info@juliandev.nl" url="https://juliandev.nl">JulianDev</vendor>
+
+    <description><![CDATA[
+        A plugin for Auto Completion for Material Design Icons (Version: 5.0.45) while typing.
+        Just start typing ":mdi" and the list with all the mdi icons will show.
+        <br><b>Please be aware you still need to include the .css file of Material Design Icons</b><br>
+        Example of the plugin:<br>
+        <img src="https://cdn.jvsdev.eu/mdicompletion/mdicompletion.gif">
+        <br>
+        MdiCompletion works on:<br>
+        Vue.js, Laravel, YAML, XML, HTML, Java, JavaScript, TypeScript, Scala, Ruby, Rust, Go, Groovy, Kotlin, Markdown, PHP, Python
+        <br>
+        Do you want this plugin with some of you're own modifications? Then contact me by
+        <a href="mailto:info@juliandev.nl">info@juliandev.nl</a> and I will build that for you if possible.
+        <b>Be aware that this is not for free!</b>
+    ]]></description>
+
+    <idea-version since-build="181.5087"/>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends optional="true" config-file="languages/java.xml">com.intellij.modules.java</depends>
+    <depends optional="true" config-file="languages/kotlin.xml">org.jetbrains.kotlin</depends>
+    <depends optional="true" config-file="languages/python.xml">com.intellij.modules.python</depends>
+    <depends optional="true" config-file="languages/ruby.xml">com.intellij.modules.ruby</depends>
+    <depends optional="true" config-file="languages/yaml.xml">org.jetbrains.plugins.yaml</depends>
+    <depends optional="true" config-file="languages/go.xml">org.jetbrains.plugins.go</depends>
+    <depends optional="true" config-file="languages/php.xml">com.jetbrains.php</depends>
+    <depends optional="true" config-file="languages/js.xml">JavaScript</depends>
+    <depends optional="true" config-file="languages/xml.xml">com.intellij.modules.xml</depends>
+    <depends optional="true" config-file="languages/markdown.xml">org.intellij.plugins.markdown</depends>
+    <depends optional="true" config-file="languages/groovy.xml">org.intellij.groovy</depends>
+    <depends optional="true" config-file="languages/scala.xml">org.intellij.scala</depends>
+    <depends optional="true" config-file="languages/rust.xml">org.rust.lang</depends>
+    <depends optional="true" config-file="languages/properties.xml">com.intellij.properties</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <preloadingActivity implementation="nl.juliandev.mdicompletion.actions.IconPreloadActivity"/>
+        <completion.contributor language="any" implementationClass="nl.juliandev.mdicompletion.languages.IconCompletionForComment"/>
+        <completion.contributor language="TEXT"
+                                order="first, before commitCompletion" implementationClass="nl.juliandev.mdicompletion.languages.IconCompletionForText"/>
+    </extensions>
+
+    <actions>
+    </actions>
+</idea-plugin>

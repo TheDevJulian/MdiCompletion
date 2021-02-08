@@ -1,0 +1,7 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <completion.contributor
+                language="JavaScript"
+                implementationClass="nl.juliandev.mdicompletion.languages.IconCompletionForJavaScript"/>
+    </extensions>
+</idea-plugin>

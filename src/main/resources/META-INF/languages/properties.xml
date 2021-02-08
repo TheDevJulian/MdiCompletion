@@ -1,0 +1,8 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <completion.contributor
+                language="Properties"
+                order="first"
+                implementationClass="nl.juliandev.mdicompletion.languages.IconCompletionForProperties"/>
+    </extensions>
+</idea-plugin>

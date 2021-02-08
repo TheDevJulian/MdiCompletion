@@ -1,0 +1,2 @@
+v1.0 build:<br>
+- Version 1.0 after a lot of beta testing the plugin works 100% successful.

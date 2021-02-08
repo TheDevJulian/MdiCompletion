@@ -1,0 +1,7 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <completion.contributor
+                language="PHP"
+                implementationClass="nl.juliandev.mdicompletion.languages.IconCompletionForPhp"/>
+    </extensions>
+</idea-plugin>

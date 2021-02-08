@@ -1,0 +1,7 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <completion.contributor
+                language="Groovy"
+                implementationClass="nl.juliandev.mdicompletion.languages.IconCompletionForGroovy"/>
+    </extensions>
+</idea-plugin>
