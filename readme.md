@@ -25,5 +25,4 @@ While you're hit `Tab` it will replace the select item with:
 # Sponsor me
 By sponsoring me, you will show that you love my work. Also, I wil get more motivated to work on open projects and maintain them.
 
-GitHub: https://github.com/sponsors/TheDevJulian <br>
 PayPal: https://paypal.me/TheDevJulian
