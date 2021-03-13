@@ -1,5 +1,5 @@
 <a href="https://thedevjulian.com" target="_blank">
-  <img src="http://jvscdn.nl/assets/logo/logo.svg" height="90">
+  <img src="https://cdn.julianvs.dev/assets/logo/logo.svg" height="90">
 </a>
 
 ---
